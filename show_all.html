@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find information</title>
+</head>
+<body>
+            doctor.id:{{doctors.doctor_id}} - {{ doctors.doctor_name }} - 
+            {{doctors.doctor_citizen_id}} - {{ doctors.doctor_address }} -
+            {{doctors.doctor_phone}}<br>
+            
+            <form action="">
+                {% for customer in customers %}
+            ---- Customer name:{{customer.customer_name}}
+    {% endfor %}
+            </form>
+            
+            <form action="">
+                {% for medicine in medicines %}
+                    ---- Medicine name:{{medicine.medicine_name}}
+            {% endfor %}
+            </form>
+            
+            <form action="">
+                {% for supplier in suppliers %}
+            ---- Suppliers name:{{supplier.supplier_name}}
+    {% endfor %}
+            </form>
+    
+    <form method="get" action="{{ url_for('find_information') }}">
+        <button type="submit">Return</button>
+      </form>
+</body>
+</html>

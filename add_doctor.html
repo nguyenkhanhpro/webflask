@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a new doctor</title>
+  </head>
+  <body>
+    <h1>Add a new doctor</h1>
+    <form method="get" action="{{url_for('insert_doctor')}}">
+      <label>Doctor name:</label>
+      <input type="text" name="doctor_name"><br><br>
+      <label>Doctor citizen id :</label>
+      <input type="number" name="doctor_citizen_id "><br><br>
+      <label>Doctor address:</label>
+      <input type="text" name="doctor_address"><br><br>
+      <label>Doctor phone:</label>
+      <input type="number" name="doctor_phone"><br><br>
+      <input type="submit" value="Add doctor">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a new supplier</title>
+  </head>
+  <body>
+    <h1>Add a new supplier</h1>
+    <form method="get" action="{{url_for('insert_supplier')}}">
+      <label>Supplier name:</label>
+      <input type="text" name="supplier_name"><br><br>
+      <label>Supplier phone:</label>
+      <input type="number" name="supplier_phone"><br><br>
+      <label>Supplier address:</label>
+      <input type="text" name="supplier_address"><br><br>
+      <label>Supplier email:</label>
+      <input type="text" name="supplier_email"><br><br>
+      <label>Doctor id:</label>
+      <input type="number" name="doctor_id"><br><br>
+      <input type="submit" value="Add supplier">
+    </form>
+  </body>
+</html>

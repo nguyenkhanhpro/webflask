@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a new medicine</title>
+  </head>
+  <body>
+    <h1>Add a new medicine</h1>
+    <form method="get" action="{{url_for('insert_medicine')}}">
+      <label>Medicine name:</label>
+      <input type="text" name="medicine_name"><br><br>
+      <label>Medicine effect:</label>
+      <input type="text" name="medicine_effect"><br><br>
+      <label>Medicine MFG date:</label>
+      <input type="date" name="medicine_MFG_date"><br><br>
+      <label>Medicine EXP date:</label>
+      <input type="date" name="medicine_EXP_date"><br><br>
+      <label>Doctor id:</label>
+      <input type="number" name="doctor_id"><br><br>
+      <input type="submit" value="Add medicine">
+    </form>
+  </body>
+</html>

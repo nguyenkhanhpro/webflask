@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update supplier</title>
+</head>
+<body>
+  <h1>Update supplier</h1>
+  <form method="get" action="{{ url_for('update_supplier_commit') }}">
+    <label for="supplier_id">supplier ID:</label>
+    <input type="number" id="supplier_id" name="supplier_id" value="{{ supplier.supplier_id }}" required><br><br>
+
+    <label for="supplier_name">supplier name:</label>
+    <input type="text" id="supplier_name" name="supplier_name" value="{{ supplier.supplier_name }}" required><br><br>
+    
+    <label for=" supplier_phone"> supplier phone:</label>
+    <input type="number" id=" supplier_phone" name=" supplier_phone" value="{{ supplier.supplier_phone }}" required><br><br>
+    
+    <label for="supplier_address">supplier address:</label>
+    <input type="text" id="supplier_address" name="supplier_address" value="{{ supplier.supplier_address }}" required><br><br>
+    
+    <label for="supplier_email">supplier email:</label>
+    <input type="text" id="supplier_email" name="supplier_email" value="{{ supplier.supplier_email }}" required><br><br>
+
+    <label for="doctor_id">doctor_id:</label>
+    <input type="number" id="doctor_id" name="doctor_id" value="{{ supplier.doctor_id }}" required><br><br>
+    
+    <button type="submit">Update supplier</button>
+  </form>
+</body>
+</html>

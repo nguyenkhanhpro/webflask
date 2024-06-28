@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update medicine</title>
+</head>
+<body>
+  <h1>Update medicine</h1>
+  <form method="get" action="{{ url_for('update_medicine_commit') }}">
+    <label for="medicine_id">medicine ID:</label>
+    <input type="number" id="medicine_id" name="medicine_id" value="{{ medicine.medicine_id }}" required><br><br>
+
+    <label for="medicine_name">medicine name:</label>
+    <input type="text" id="medicine_name" name="medicine_name" value="{{ medicine.medicine_name }}" required><br><br>
+    
+    <label for=" medicine_effect"> medicine effect:</label>
+    <input type="text" id=" medicine_effect" name=" medicine_effect" value="{{ medicine.medicine_effect }}" required><br><br>
+    
+    <label for="medicine_MFG_date">medicine MFG date:</label>
+    <input type="date" id="medicine_MFG_date" name="medicine_MFG_date" value="{{ medicine.medicine_MFG_date }}" required><br><br>
+    
+    <label for="medicine_EXP_date">medicine EXP date:</label>
+    <input type="date" id="medicine_EXP_date" name="medicine_EXP_date" value="{{ medicine.medicine_EXP_date }}" required><br><br>
+    
+    <label for="doctor_id">doctor_id:</label>
+    <input type="number" id="doctor_id" name="doctor_id" value="{{ medicine.doctor_id }}" required><br><br>
+    
+    <button type="submit">Update medicine</button>
+  </form>
+</body>
+</html>

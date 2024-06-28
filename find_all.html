@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find information</title>
+  </head>
+  <body>
+    <h1>Find information</h1>
+    <form method="get" action="{{url_for('showAll')}}">
+      <label for="doctor_id">Doctor id:</label>
+      <input type="text" id="id" name="doctor_id" required><br><br>
+      <button type="submit">Find</button>
+    </form>
+    <form method="get" action="{{ url_for('home') }}">
+      <button type="submit">Return home</button>
+    </form>
+  </body>
+</html>

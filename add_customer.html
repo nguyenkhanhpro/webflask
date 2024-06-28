@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a new customer</title>
+  </head>
+  <body>
+    <h1>Add a new customer</h1>
+    <form method="get" action="{{url_for('insert_customer')}}">
+      <label>Customer name:</label>
+      <input type="text" name="customer_name"><br><br>
+      <label>Customer gender:</label>
+      <input type="text" name="customer_gender"><br><br>
+      <label>Customer address:</label>
+      <input type="text" name="customer_address"><br><br>
+      <label>Customer phone:</label>
+      <input type="number" name="customer_phone"><br><br>
+      <label>Doctor id:</label>
+      <input type="number" name="doctor_id"><br><br>
+      <input type="submit" value="Add customer">
+    </form>
+  </body>
+</html>
